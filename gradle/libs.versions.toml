@@ -1,0 +1,112 @@
+[versions]
+assertj = "3.24.2"
+awaitility = "4.2.0"
+
+flyway = "9.16.1"
+jackson = "2.14.2"
+jooq = "3.18.2"
+junit-jupiter = "5.9.0"
+kotlin = "1.7.20"
+#kotlin-logging = "2.1.23"
+kotlin-logging = "3.0.4"
+log4j = "2.17.2"
+#log4j = "2.19.0"
+#kotlin-logging = "3.0.4"
+micronaut = "3.8.8"
+micronaut-gradle = "3.7.2"
+micronaut-data = "3.9.6"
+micronaut-kafka = "4.5.3"
+micronaut-test-spock = "3.7.0"
+okhttp = "4.10.0"
+postgresql = "42.6.0"
+reactor-core = "3.4.24"
+retrofit = "2.9.0"
+retrofit-reactor-adapter = "2.1.0"
+shadow = "7.1.2"
+shedlock = "5.1.0"
+slf4j = "1.7.36"
+snakeyaml = "1.33"
+spock = "2.3-groovy-3.0"
+
+testcontainers = "1.17.6"
+
+[libraries]
+awaitility = { module = "org.awaitility:awaitility", version.ref = "awaitility" }
+awaitility-groovy = { module = "org.awaitility:awaitility-groovy", version.ref = "awaitility" }
+assertj-core = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+
+flyway-core = { module = "org.flywaydb:flyway-core", version.ref = "flyway" }
+
+jackson-annotations = { module = "com.fasterxml.jackson.core:jackson-annotations", version.ref = "jackson" }
+jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson" }
+jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
+jackson-dataformat-csv = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-csv", version.ref = "jackson" }
+jackson-dataformat-yaml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml", version.ref = "jackson" }
+jackson-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310", version.ref = "jackson" }
+jackson-jdk8 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jdk8", version.ref = "jackson" }
+jackson-kotlin-module = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson" }
+
+jooq = { module = "org.jooq:jooq", version.ref = "jooq" }
+
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+kotlin-stdlib-jdk8 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin" }
+kotlin-logging = { module = "io.github.microutils:kotlin-logging-jvm", version.ref = "kotlin-logging" }
+
+log4j-api = { module = "org.apache.logging.log4j:log4j-api", version.ref = "log4j" }
+log4j-core = { module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j" }
+log4j-slf4j = { module = "org.apache.logging.log4j:log4j-slf4j-impl", version.ref = "log4j" }
+
+micronaut-plugin = { module = "io.micronaut.gradle:micronaut-gradle-plugin", version.ref = "micronaut-gradle" }
+micronaut-inject = { module = "io.micronaut:micronaut-inject", version.ref = "micronaut" }
+micronaut-inject-java = { module = "io.micronaut:micronaut-inject-java", version.ref = "micronaut" }
+micronaut-inject-groovy = { module = "io.micronaut:micronaut-inject-groovy", version.ref = "micronaut" }
+
+micronaut-data-model = { module = "io.micronaut.data:micronaut-data-model", version.ref = "micronaut-data" }
+micronaut-data-runtime = { module = "io.micronaut.data:micronaut-data-runtime", version.ref = "micronaut-data" }
+
+micronaut-kafka = { module = "io.micronaut.kafka:micronaut-kafka", version.ref = "micronaut-kafka" }
+micronaut-test-core = { module = "io.micronaut.test:micronaut-test-core", version.ref = "micronaut" }
+micronaut-test-junit5 = { module = "io.micronaut.test:micronaut-test-junit5", version.ref = "micronaut" }
+micronaut-test-spock = { module = "io.micronaut.test:micronaut-test-spock", version.ref = "micronaut-test-spock" }
+
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+okhttp-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
+
+postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
+
+reactor-core = { module = "io.projectreactor:reactor-core", version.ref = "reactor-core" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter-jackson = { module = "com.squareup.retrofit2:converter-jackson", version.ref = "retrofit" }
+retrofit-reactor-adapter = { module = "com.jakewharton.retrofit:retrofit2-reactor-adapter", version.ref = "retrofit-reactor-adapter" }
+
+shedlock-micronaut-jdbc-provider = { module = "net.javacrumbs.shedlock:shedlock-provider-jdbc-micronaut", version.ref = "shedlock" }
+shedlock-micronaut = { module = "net.javacrumbs.shedlock:shedlock-micronaut", version.ref = "shedlock" }
+
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+snakeyaml = { module = "org.yaml:snakeyaml", version.ref = "snakeyaml" }
+spock = { module = "org.spockframework:spock-core", version.ref = "spock" }
+
+testcontainers = { module = "org.testcontainers:testcontainers", version.ref = "testcontainers" }
+testcontainers-junit-jupiter = { module = "org.testcontainers:junit-jupiter", version.ref = "testcontainers" }
+testcontainers-postgresql = { module = "org.testcontainers:postgresql", version.ref = "testcontainers" }
+testcontainers-kafka = { module = "org.testcontainers:kafka", version.ref = "testcontainers" }
+testcontainers-spock = { module = "org.testcontainers:spock", version.ref = "testcontainers" }
+
+[bundles]
+awaitility = ["awaitility", "awaitility-groovy"]
+jackson = ["jackson-annotations", "jackson-core", "jackson-databind", "jackson-jsr310", "jackson-jdk8"]
+retrofit = [
+    "retrofit",
+    "retrofit-converter-jackson",
+    "reactor-core",
+    "retrofit-reactor-adapter",
+    "okhttp",
+    "okhttp-logging-interceptor"
+]
+shedlock = ["shedlock-micronaut", "shedlock-micronaut-jdbc-provider"]
+testcontainers-spock = ["testcontainers", "testcontainers-spock", "testcontainers-postgresql"]
+testcontainers-spock-kafka = ["testcontainers", "testcontainers-spock", "testcontainers-kafka"]
+testcontainers-spock-postgresql = ["testcontainers", "testcontainers-spock", "testcontainers-postgresql"]
+
+[plugins]
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
