@@ -34,4 +34,4 @@ jobs:
           arguments: publish -Prelease.useLastTag=true final
         env:
           GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-          GITHUB_TOKEN: ${{ secrets.PUBLISHING_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.PACKAGE_PUBLISHER_TOKEN }}
