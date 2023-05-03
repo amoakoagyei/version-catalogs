@@ -7,7 +7,6 @@ plugins {
 }
 
 group = "io.excalibur.version.catalogs"
-version = "0.0.1"
 
 repositories {
     mavenCentral()
