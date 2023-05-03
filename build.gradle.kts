@@ -1,9 +1,8 @@
 //https://blog.jdriven.com/2023/03/gradle-goodness-publish-version-catalog-for-sharing-between-projects/
 plugins {
     `version-catalog`
-//    `maven-publish`
+    `maven-publish`
     id("nebula.release") version "17.2.0"
-    id("nebula.maven-publish") version "18.4.0"
 }
 
 group = "io.excalibur.version.catalogs"
@@ -15,8 +14,6 @@ repositories {
 catalog {
     versionCatalog {
         from(files("gradle/libs.versions.toml"))
-        // But also use the methods of the VersionCatalogBuilder.
-//        library("helidon-deps", "io.helidon:helidon-dependencies:3.2.0")
     }
 }
 
@@ -40,12 +37,8 @@ publishing {
         maven {
             url = uri("https://maven.pkg.github.com/amoakoagyei/version-catalogs")
             credentials {
-//                val mavenRepoUsername: String by project
-                val mavenRepoUsername = System.getenv("GITHUB_ACTOR")
-                val mavenRepoPassword = System.getenv("GITHUB_TOKEN")
-//                val mavenRepoPassword: String by project
-                username = mavenRepoUsername
-                password = mavenRepoPassword
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
             }
         }
     }
