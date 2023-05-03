@@ -38,7 +38,7 @@ publishing {
     repositories {
         // Configuration for Maven repo to publish our version catalog to.
         maven {
-            url = uri("https://maven.pkg.github.com/amoakoagyei/excalibur-version-catalogs")
+            url = uri("https://maven.pkg.github.com/amoakoagyei/version-catalogs")
             credentials {
 //                val mavenRepoUsername: String by project
                 val mavenRepoUsername = System.getenv("GITHUB_ACTOR")
